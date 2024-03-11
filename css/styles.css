@@ -1,0 +1,273 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Header Styles */
+.header-area {
+    background-color: #e6cf00;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.main-header-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.main-menu ul {
+    list-style: none;
+}
+
+.main-menu ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.main-menu ul li:last-child {
+    margin-right: 0;
+}
+
+.main-menu ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.main-menu ul li a:hover {
+    color: #dded04;
+}
+
+/* Slider Styles */
+.client-stats {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.stat-wrapper {
+    text-align: center;
+}
+
+.stat-wrapper p {
+    font-size: 14px;
+    color: #666;
+}
+
+.slider_area {
+    position: relative;
+    padding: 100px 0;
+    background-color: #f7f307;
+    text-align: center;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.slider_text {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.slider_text h3 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.slider_text p {
+    margin-bottom: 30px;
+}
+
+.boxed-btn4 {
+    display: inline-block;
+    background-color: #ff6b6b;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.boxed-btn4:hover {
+    background-color: #333;
+}
+
+.dog_thumb img {
+    max-width: 100%;
+    height: auto;
+}
+
+.slider_area2 {
+    position: relative;
+    padding: 100px 0;
+    background-color: #fefefc;
+    text-align: center;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex: 1;
+    height: 70vh;
+}
+
+.team-member {
+    flex: 1;
+    margin: 0 15px;
+}
+
+.dog_img img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Additional Styles */
+.section-title {
+    font-size: 46px;
+    margin-bottom: 40px;
+}
+
+.team-member img {
+    border-radius: 50%;
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.team-member h4 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.team-member p {
+    font-size: 18px;
+    color: #666666;
+}
+
+.slider_area3 {
+    background-color: #f7f307;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+.slider_area2 .row {
+    display: flex;
+    justify-content: center;
+}
+
+.slider_area2 .col-md-4 {
+    flex: 1;
+    margin: 0 15px;
+}
+
+.slider_area3 .client-stats {
+    display: flex;
+    justify-content: center;
+}
+
+.slider_area3 .client-stats .stat {
+    margin: 0 15px;
+}
+
+.client-stats {
+    margin: 0 15px;
+}
+
+.client-stats .stat {
+    display: inline-block;
+    margin-right: 30px;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    .team-member {
+        flex-basis: calc(50% - 30px);
+        margin-right: 15px;
+    }
+
+    .team-member:nth-child(2n) {
+        margin-right: 0;
+    }
+
+    .slider_text {
+        max-width: 80%;
+        margin: 0 auto 20px;
+    }
+
+    .dog_thumb {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    .slider_area2 {
+        justify-content: flex-start;
+        align-items: flex-start; 
+    }
+   
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+}
+
+footer h4 {
+    color: #dded04;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+footer p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    padding-left: 10px;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+footer ul li:before {
+    content: "\2022";
+    color: #dded04;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
